@@ -2,6 +2,7 @@
 
 var outer = function(){  // outer function 
   var name = 'Tyler';
+
   return function(){  // inner function
     return 'The original name was ' + name;
   }
@@ -76,21 +77,17 @@ result(); // now will show 'Calling Jake at 435-215-9248' in console
 */
 
 var sumNum = function(num1) { 
-  function addNum () {      
+  function addNum() {      
     return num1 + 2;
   }
-return addNum ();
+return addNum();
 };
-sumNum (1);
+sumNum();
 
-
-
-
-
-
-
-
-
+// var n = 2;
+// for (var i = 0; i < n; i++){
+//     sumNum(1);
+// };
 
 
 
